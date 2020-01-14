@@ -1,0 +1,6 @@
+C:\Users\ariel.aguirre\Desktop\Capacitacion-SOLID\Capacitacion-SOLID\bin\Debug\Capacitacion-SOLID.exe.config
+C:\Users\ariel.aguirre\Desktop\Capacitacion-SOLID\Capacitacion-SOLID\bin\Debug\Capacitacion-SOLID.exe
+C:\Users\ariel.aguirre\Desktop\Capacitacion-SOLID\Capacitacion-SOLID\bin\Debug\Capacitacion-SOLID.pdb
+C:\Users\ariel.aguirre\Desktop\Capacitacion-SOLID\Capacitacion-SOLID\obj\Debug\Capacitacion-SOLID.csprojAssemblyReference.cache
+C:\Users\ariel.aguirre\Desktop\Capacitacion-SOLID\Capacitacion-SOLID\obj\Debug\Capacitacion-SOLID.exe
+C:\Users\ariel.aguirre\Desktop\Capacitacion-SOLID\Capacitacion-SOLID\obj\Debug\Capacitacion-SOLID.pdb
