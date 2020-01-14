@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Evento.cs" />
-    <Compile Include="Fechas.cs" />
+    <Compile Include="Clases\CerrarConsola.cs" />
+    <Compile Include="Clases\Evento.cs" />
+    <Compile Include="Clases\Imprimir.cs" />
+    <Compile Include="Clases\ImprimirEvento.cs" />
+    <Compile Include="Clases\ObtenerArchivoInfo.cs" />
+    <Compile Include="Clases\ObtenerFechaDiferenteEvento.cs" />
+    <Compile Include="Interfaces\IArchivos.cs" />
+    <Compile Include="Interfaces\ICerrarConsola.cs" />
+    <Compile Include="Interfaces\IImprimir.cs" />
+    <Compile Include="Interfaces\IImprimirEvento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,5 +62,6 @@
   <ItemGroup>
     <Content Include="Eventos.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
