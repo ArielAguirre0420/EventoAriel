@@ -36,34 +36,32 @@ namespace Capacitacion_SOLID
 
             int dia = int.Parse(FechaActual.Split('/')[0]);
             int mes = int.Parse(FechaActual.Split('/')[1]);
-            int año = int.Parse(FechaActual.Split('/')[2]);
+            int anio = int.Parse(FechaActual.Split('/')[2]);
+            DateTime fecha2 = new DateTime(anio, mes, dia);
 
             foreach (var eventos in cContenidoArchivo)
             {
                 int diaE = int.Parse(eventos.dtFechaEvento.Split('/')[0]);
                 int mesE = int.Parse(eventos.dtFechaEvento.Split('/')[1]);
-                int añoE = int.Parse(eventos.dtFechaEvento.Split('/')[2]);
+                int anioE = int.Parse(eventos.dtFechaEvento.Split('/')[2]);
 
-                if (año != añoE)
+                
+                DateTime fecha1 = new DateTime(anioE, mesE, diaE);
+                TimeSpan dias = fecha2.Date - fecha1.Date;
+                if (dias.Days >= 0)
                 {
-                    int diferencia = año - añoE;
-                    Imprimir("El evento " + eventos.cNombreEvento + " fue hace " + Math.Abs(diferencia) + " años");
+
+                Imprimir("El evento " + eventos.cNombreEvento + " fue hace " + dias.Days + " dias");
                 }
                 else
                 {
-                    if (mes != mesE)
-                    {
-                        int diferencia = mes - mesE;
-                        Imprimir("El evento " + eventos.cNombreEvento + " fue hace " + Math.Abs(diferencia) + " meses");
-                    }
-                    else
-                    {
-                        int diferencia = dia - diaE;
-                        Imprimir("El evento " + eventos.cNombreEvento + " fue hace " + Math.Abs(diferencia) + " dias");
-                    }
+                    Imprimir("El evento " + eventos.cNombreEvento + " falta " + (dias.Days*-1) + " dias");
                 }
+                //Console.WriteLine("Días transcurridos {0}", dias.Days); 
+
+        
             }
-        }
+}
 
         public static string GetFechaActual()
         {
